@@ -2,6 +2,7 @@
 # Write Python 3 code in this online editor and run it.
 import requests
 import json
+import streamlit as st
 
 url = "https://b2b.taxi.yandex.net/b2b/cargo/integration/v2/claims/search"
 date_from = "2023-04-16"
@@ -23,4 +24,5 @@ headers = {
 }
 
 response = requests.request("POST", url, headers=headers, data=payload)
+st.write(response)
 print(response)
