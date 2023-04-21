@@ -1,6 +1,7 @@
 # Online Python compiler (interpreter) to run Python online.
 # Write Python 3 code in this online editor and run it.
 import requests
+import json
 
 url = "https://b2b.taxi.yandex.net/b2b/cargo/integration/v2/claims/search"
 date_from = "2023-04-16"
