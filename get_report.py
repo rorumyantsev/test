@@ -11,7 +11,7 @@ payload = json.dumps({
     "created_to": f"{date_to}T23:59:59{timezone_offset}",
     "limit": 1000,
     "cursor": 0
-}) if cursor == 0 else json.dumps({"cursor": cursor})
+})
 
 client_secret = "y0_AgAAAABpCSWQAAc6MQAAAADecJWo-54QWQeXTcmlC8Qm4hsM5i4Ddtk"
 
