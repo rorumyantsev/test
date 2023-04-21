@@ -24,5 +24,7 @@ headers = {
 }
 
 response = requests.request("POST", url, headers=headers, data=payload)
-st.write(response)
+st.write(response.text)
+claims = json.loads(response.text)
+st.write(claims)
 print(response)
